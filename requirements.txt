@@ -1,0 +1,11 @@
+Faker
+openpyxl
+psycopg2-binary
+relatorio
+xlsxwriter
+
+django
+django-dotenv
+django-allauth
+django-crispy-forms
+django-dynamic-raw-id
