@@ -1,2 +1,3 @@
-# django-base-project
-Django Base Project
+# Django Base Project
+
+This is a skeleton for a Django Project
