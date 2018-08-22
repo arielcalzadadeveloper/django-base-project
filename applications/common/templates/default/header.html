@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col">
+        <div class="text-right">
+            <a href="{% url 'users:home' %}"
+               class="btn {% if user.is_authenticated %}btn-danger{% else %}btn-success{% endif %}"
+               type="button"
+               id="session-button">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </div>
+</div>
