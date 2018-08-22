@@ -1,0 +1,20 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$24000$aR3yuVVEqvkh$uo8avwqhBdxlnBW+DpnOQW2OTiW3Jym596yRsyvgqKY=",
+            "last_login": "2018-03-14T20:10:23.756Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "Ariel",
+            "last_name": "Calzada",
+            "email": "ariel.calzada@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2018-03-14T20:10:23.756Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

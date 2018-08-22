@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include "default/top.html" %}
+    {% block css_extra %}{% endblock %}
+    {% block js_top %}{% endblock %}
+</head>
+<body>
+<div class="container">
+    {% include "default/messages.html" %}
+    {% block content %}{% endblock %}
+</div>
+
+{% include "default/bottom.html" %}
+{% block js_bottom %}{% endblock %}
+</body>
+</html>
