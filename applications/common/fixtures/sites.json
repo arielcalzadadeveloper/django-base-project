@@ -1,0 +1,10 @@
+[
+    {
+        "model": "sites.Site",
+        "pk": 1,
+        "fields": {
+            "domain": "django_base_project.int",
+            "name": "default",
+        }
+    }
+]
