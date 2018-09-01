@@ -1,9 +1,9 @@
 from django.conf.urls import url
 
-from applications.users.views.home import Home
+from applications.users.views.profile import Profile
 
 app_name = "users"
 
 urlpatterns = [
-    url(regex=r"^$", view=Home, name="home"),
+    url(regex=r"^$", view=Profile, name="profile"),
 ]
