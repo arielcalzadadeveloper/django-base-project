@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="row py-5">
+    <div class="row py-2">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-6 mx-auto">
@@ -17,13 +17,15 @@
                                 <div class="form-group">
                                     <label for="login">Usuario</label>
                                     <input type="text"
-                                           class="form-control form-control-lg rounded-0"
+                                           class="form-control form-control-lg rounded-0 {% if form.login.errors %}is-invalid{% endif %}"
                                            name="login"
                                            id="id_login"
                                            autofocus="autofocus"
                                            required="">
                                     {% if form.login.errors %}
-                                        {{ form.login.errors }}
+                                        <div class="invalid-feedback">
+                                            {{ form.login.errors }}
+                                        </div>
                                     {% endif %}
 
                                 </div>
@@ -31,13 +33,15 @@
                                 <div class="form-group">
                                     <label>Contraseña</label>
                                     <input type="password"
-                                           class="form-control form-control-lg rounded-0"
+                                           class="form-control form-control-lg rounded-0 {% if form.password.errors %}is-invalid{% endif %}"
                                            id="id_password"
                                            name="password"
                                            required="">
 
                                     {% if form.password.errors %}
-                                        {{ form.password.errors }}
+                                        <div class="invalid-feedback">
+                                            {{ form.password.errors }}
+                                        </div>
                                     {% endif %}
                                 </div>
 

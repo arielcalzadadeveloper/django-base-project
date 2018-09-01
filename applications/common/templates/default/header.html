@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col">
         <div class="text-right">
-            <a href="{% if user.is_authenticated %}{% url 'users:home' %}{% else %}{% url 'account_login' %}{% endif %}"
+            <a href="{% if user.is_authenticated %}{% url 'account_logout' %}{% else %}{% url 'account_login' %}{% endif %}"
                class="btn {% if user.is_authenticated %}btn-danger{% else %}btn-success{% endif %}"
+               title="{% if user.is_authenticated %}Cerrar sesión{% else %}Iniciar sesión{% endif %}"
                type="button"
                id="session-button">
                 <i class="fas fa-user"></i>
