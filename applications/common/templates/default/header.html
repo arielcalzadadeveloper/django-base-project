@@ -10,7 +10,7 @@
             </a>
 
             {% if user.is_authenticated %}
-                <a href="{% url 'home' %}"
+                <a href="{% url 'users:profile' %}"
                    class="btn btn-info"
                    title="Datos de perfil"
                    type="button"
